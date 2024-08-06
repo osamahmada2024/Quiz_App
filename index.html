@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Quiz App</title>
+    <!-- style for css -->
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/question.css" />
+    <link rel="stylesheet" href="css/final.css" />
+    <!-- font awesome -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <video autoplay muted loop id="video">
+      <source src="24713-345209721_medium.mp4" type="video/mp4" />
+    </video>
+    <div class="container">
+      <div class="layer">
+        <div class="settings" >
+          <h2>Quiz Settings</h2>
+          <div class="category">
+            <label for="category">Category</label>
+            <select id="category">
+              <option value="9">General Knowledge</option>
+              <option value="17">Science & Nature</option>
+              <option value="18">Science: Computers</option>
+              <option value="19">Science: Mathematics</option>
+              <option value="23">History</option>
+            </select>
+          </div>
+          <div class="difficulty">
+            <label for="difficulty">Difficulty</label>
+            <label for="Easy">
+              <input name="difficult" type="radio" id="easy" />
+              Easy
+            </label>
+            <label for="Medium">
+              <input name="difficult" type="radio" id="medium" />
+              Medium
+            </label>
+            <label for="Hard">
+              <input name="difficult" type="radio" id="hard" />
+              Hard
+            </label>
+          </div>
+          <div class="nQuestions">
+            <label for="nQuestions">nQuestions </label>
+            <input placeholder="number.." id="amount" type="number" />
+          </div>
+          <button id="Start" class="start">Start</button>
+        </div>
+        <div class="quiz" style="display: none;">
+          <div class="count">
+            <p id="current"></p>
+            <p>/</p>
+            <p id="all"></p>
+          </div>
+
+          <h3 id="question"></h3>
+
+          <label id="an1" class="an"
+            ><input type="radio" name="radio" /><span></span></label
+          >
+          <label id="an2" class="an"
+            ><input type="radio" name="radio" /><span></span></label
+          >
+          <label id="an3" class="an"
+            ><input type="radio" name="radio" /><span></span></label
+          >
+          <label id="an4" class="an"
+            ><input type="radio" name="radio" /><span></span></label
+          >
+          <button id="next">Submit <span>>></span></button>
+        </div>
+        <div class="final" style="display: none;">
+          <h2><mark>You Answered All Questions</mark></h2>
+          <p id="score"></p>
+          <h4>Try Again</h4>
+          <button id="again">Try Again <span> >></span></button>
+        </div>
+      </div>
+    </div>
+    <script type="module" src="js/settings.js"></script>
+  </body>
+</html>

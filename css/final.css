@@ -1,0 +1,62 @@
+.final {
+    height: 40vh;
+    /* padding-top: 10vh; */
+    
+}
+
+.final #score {
+    /* margin-top: 20px; */
+    font-size: 25px;
+    color: #fff;
+    text-shadow: 2px 2px blue;
+    margin-bottom: 8vh;
+}
+#again{
+    display: inline-block;
+    height: 7vh;
+    margin-top: 8vh;
+    width: 8vw;
+    border: 0;
+    color: #fff;
+    background: #3333337c;
+    font-size: 20px;
+    cursor: pointer;
+    transition: width 0.5s,color0.8s;
+    border-radius: 10px;
+    margin: 0 auto;
+}
+#again:hover{
+    width:10vw ;
+    color: #fff;
+    text-align: left;
+    padding-left: 1vw
+}
+#again:hover span{
+    margin-left: 9px;
+}
+.final h4{
+    display: inline;
+    margin-right: 2px;
+}
+@media (max-width:1120px) {
+    
+.final {
+    padding-top: 0;
+}
+#again{
+    font-size: 10px;
+}
+    
+
+
+}
+@media (max-width:700px) {
+    
+
+#again{
+    margin-top: 0;
+}
+    
+
+
+}

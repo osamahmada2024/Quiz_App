@@ -1,0 +1,81 @@
+.count{
+    text-align: center;
+    min-height: 2vh;
+    width: 5vw;
+    border-radius: 50%;
+    background-color: #333;
+    font-size: 20px;
+    font-weight:900;
+    color: #f9f9f9;
+    margin-left: 30px;
+    line-height: 5vh;
+    box-shadow: 1px 1px  9px rgba(4, 4, 255, 0.466);
+}
+.count p{
+    display: inline;
+}
+#question{
+    background: #3333337c;
+    color:#fff;
+    text-shadow: 2px 2px blue;
+    min-height: 9vh;
+    line-height: 6vh;
+    border-radius: 9px;
+    margin: 2vh;
+    font-size: 22px;
+    display: block;
+    text-align: center;
+    padding: 10px;
+    margin-bottom: 4vh;
+}
+.an{
+display: inline-block;
+width: 45%;
+background-color: #3333337c;
+color:#fff;
+text-shadow: 2px 2px blue;
+text-align: left;
+padding: 9px;
+margin: 1vh;
+border-radius: 9px;
+min-height:5vh ;
+word-wrap: break-word;
+transition: opacity 0.5s;
+cursor: pointer;
+}
+.an:hover{
+opacity: 0.7;
+}
+.an span{
+    margin-left: 10px;
+}
+#next{
+    display: block;
+    height: 7vh;
+    margin-top: 8vh;
+    width: 8vw;
+    border: 0;
+    color: #fff;
+    background: #3333337c;
+    font-size: 20px;
+    cursor: pointer;
+    transition: width 0.5s,color0.8s;
+    border-radius: 10px;
+    margin-left: auto;
+    margin-right: 20px;
+}
+#next:hover{
+    width:10vw ;
+    color: #fff;
+
+
+}
+@media (max-width:970px) {
+
+
+    .layer {
+        height: 70%;
+    }
+
+
+}

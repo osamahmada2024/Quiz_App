@@ -1,0 +1,154 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Oswald", sans-serif;
+}
+
+#video {
+    position: fixed;
+    top: 0;
+    left: 0;
+    min-width: 100%;
+    min-height: 100%;
+    z-index: -1;
+}
+
+.container {
+    width: 70%;
+    margin: 0 auto;
+}
+
+.layer {
+    height: 80vh;
+    padding: 4%;
+    margin-top: 15vh;
+    background-color: #42427c73;
+    padding: 50px;
+    border-radius: 6px;
+    text-align: center;
+}
+
+.settings h2 {
+    font-size: 70px;
+    color: #fff;
+    text-shadow: 9px 9px #111;
+    margin-bottom: 6vh;
+}
+
+.settings div {
+    width: 60%;
+    margin: 0 auto;
+    font-size: 30px;
+    text-align: left;
+    color: #000;
+}
+
+
+.category select {
+    width: 23vw;
+    background-color: #f9f9f9;
+    font-size: 18px;
+    height: 5vh;
+    margin-bottom: 3vh;
+    padding: 2px;
+    border-radius: 7px;
+    margin-left: 2vw;
+
+}
+
+.difficulty label {
+    margin-right: 2vw;
+}
+
+.difficulty label:first-of-type {
+    margin-right: 4vw;
+}
+
+.difficulty input {
+    height: 2vh;
+    width: 1vw;
+    margin-bottom: 3vh;
+
+}
+
+.nQuestions label {
+    margin-right: 1vw;
+
+}
+
+.nQuestions input {
+    width: 23vw;
+    height: 4vh;
+    font-size: 18px;
+    border-radius: 7px;
+    border: 0;
+    padding: 6px;
+}
+
+.start {
+    height: 5vh;
+    line-height: 5vh;
+    margin-top: 6vh;
+    width: 12vw;
+    background-color: #fff;
+    /* color: #fff; */
+    font-size: 18px;
+    cursor: pointer;
+    transition: scale 0.5s, background-color 0.8s, color0.8s;
+    border-radius: 10px;
+    text-shadow: 1px 1px 1px #1120aa;
+
+}
+
+.start:hover {
+    color: #fff;
+    background-color: #000;
+    scale: 1.3;
+
+
+}
+
+@media (max-width:1350px) {
+
+    .settings h2 {
+        font-size: 30px;
+    }
+
+    .settings label,
+    .settings option {
+        font-size: 20px;
+
+    }
+
+}
+
+
+@media (max-width:970px) {
+
+    .settings h2 {
+        font-size: 20px;
+    }
+
+    .settings label,
+    .settings option {
+        font-size: 20px;
+
+
+    }
+
+    .settings label {
+        display: block;
+    }
+
+    .layer {
+        height: 550px;
+    }
+
+
+}
+
+
+input[type="radio"] {
+    font-size: large;
+}
